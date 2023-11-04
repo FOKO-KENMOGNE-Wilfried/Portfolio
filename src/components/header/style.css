@@ -1,0 +1,16 @@
+.active-link.active{
+    position: relative;
+}
+.active-link::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-color: #149380;
+    transition: all 0.5s ease-in-out;
+}
+.active-link.active::before{
+    height: 100%;
+}

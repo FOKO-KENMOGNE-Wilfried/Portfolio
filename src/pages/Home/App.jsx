@@ -11,7 +11,7 @@ const Title = styled.h1`
     font-size: 50px;
     font-family: cursive;
     margin-top: 20%;
-    border: 1px solid red;
+    
     @media only screen and (max-width: 1110px){
         font-size: 40px;
     }
@@ -25,7 +25,7 @@ const TextStyled = styled.p`
     height: 100%;
     padding-left: 100px;
     margin-top: -10px;
-    border: 1px solid red;
+    
 `
 const ButtonStyled = styled(Link)`
     color: ${colors.secondary};
@@ -36,19 +36,19 @@ const ButtonStyled = styled(Link)`
     padding: 6px;
     border-radius: 6px;
     text-align: center;
-    border: 1px solid red;   
+       
 `
 const Box1 = styled.div`
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-top: 160px;
-    border: 1px solid red;
+    
     @media only screen and (max-width: 1110px){
         margin-top: 200px; 
     }
     @media only screen and (max-width: 820px){
-        margin-top: 500px; 
+        margin-top: 340px; 
         margin-left: 25%;
         width: 90%;  
     }
@@ -60,14 +60,14 @@ const Box1 = styled.div`
 const Box2 = styled.div`
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    
 `
 const ImageContainer = styled.div`
     border: 10px solid ${colors.secondary};
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 1px solid red;
+    
     position: absolute;
         left: 70%;
         top: 30%;
@@ -77,7 +77,7 @@ const ImageContainer = styled.div`
     }
     @media only screen and (max-width: 820px){
         position: absolute;
-        top: 20%;
+        top: 15%;
         left: 250px;
     }
     @media only screen and (max-width: 600px){

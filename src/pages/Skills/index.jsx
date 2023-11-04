@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import colors from "../../utils/styles/style"
 
 
@@ -10,15 +10,13 @@ const DefultText = styled.div`
     padding-top: 80px;
     font-family: cursive;
     font-size: 20px;
-    border: 1px solid red;
+    
 `
 const TitleStyled = styled.h1`
-    border-top: 4px solid ${colors.secondary};
     border-bottom: 4px solid ${colors.secondary};
     margin-left: -40px;
-    margin-right: -5px;
     text-align: center;
-    border: 1px solid red;
+    
 `
 const Box = styled.div`
     display: flex;
@@ -29,29 +27,51 @@ const Box = styled.div`
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    border: 1px solid red;
+    
+`
+const InvertRotate = keyframes`
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 `
 const StyledImage = styled.img`
     width: 50px;
     height: 50px;
     margin-top: 25px;
-    background: ${colors.secondary};
-    border: 1px solid red;
+    position: relative;
+    animation: ${InvertRotate} 10s linear infinite;
+    
+`
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 `
 const StyledImageContainer = styled.div`
-    border: 2px solid ${colors.secondary};
-    background: ${colors.secondary};
-    border-radius: 50px;
+    border: 5px dashed ${colors.secondary};
+    border-radius: 60px;
     width: 100px;
     height: 100px;
-    border: 1px solid red;
+    animation: ${rotate} 10s linear infinite;
+    &:hover{
+        background: #abbaab;
+        transition:
+        background 0.4s,
+        transform 2s;
+    }
 `
 
 function Skills(){
     return(
         <DefultText>
             <TitleStyled>
-                MY SKILLS
+                SKILLS
             </TitleStyled>
             <Box>
                 <StyledImageContainer>
@@ -71,7 +91,7 @@ function Skills(){
                 </StyledImageContainer>
             </Box>
             <TitleStyled>
-                MY TOOLS
+                TOOLS AND APPLICATION
             </TitleStyled>
             <Box>
                 <StyledImageContainer>
@@ -83,7 +103,13 @@ function Skills(){
                 </StyledImageContainer>
 
                 <StyledImageContainer>
-                    <StyledImage src="src\assets\logo\github.png" alt="github" />               
+                    <StyledImage src="src\assets\logo\github.ico" alt="github" />               
+                </StyledImageContainer>
+                <StyledImageContainer>
+                    <StyledImage src="src\assets\logo\firebase.png" alt="github" />               
+                </StyledImageContainer>
+                <StyledImageContainer>
+                    <StyledImage src="src\assets\logo\vscode.png" alt="vscode" />               
                 </StyledImageContainer>
             </Box>
         </DefultText>

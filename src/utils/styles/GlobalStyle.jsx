@@ -1,10 +1,11 @@
 import { createGlobalStyle } from "styled-components";
-import image from "../../assets/background/5.jpg"
+import image from "../../assets/background/2.png"
 
 
 const StyledGlobalStyle = createGlobalStyle`
-    *{
+    body{
         background-image: url(${image});
+        background-size: cover;
     }
 `
 

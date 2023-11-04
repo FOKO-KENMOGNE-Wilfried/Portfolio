@@ -8,7 +8,7 @@ const DefultText = styled.div`
     margin-top: 150px;
     font-family: cursive;
     font-size: 20px;
-    border: 1px solid red;
+    
 `
 const TitleStyled = styled.h1`
     text-decoration: underline;
@@ -18,13 +18,13 @@ const Box = styled.div`
     display: flex;
     flex-direction: row;
     gap: 200px;
-    border: 1px solid red;
+    
 `
 const StyledImg = styled.img`
     width: 400px;
     height: 400px;
     margin-top: 150px;
-    border: 1px solid red;
+    
 `
 
 function About(){

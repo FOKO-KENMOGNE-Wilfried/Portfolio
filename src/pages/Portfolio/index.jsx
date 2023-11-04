@@ -6,12 +6,12 @@ const DefultText = styled.div`
     margin-top: 150px;
     font-family: cursive;
     font-size: 20px;
-    border: 1px solid red;
+    
 `
 const TitleStyled = styled.h1`
     text-decoration: underline;
     text-align: center;
-    border: 1px solid red;
+    
 `
 
 function Portfolio(){

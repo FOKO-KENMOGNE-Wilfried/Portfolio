@@ -9,7 +9,7 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     gap: 200px;
     width: 60px;
-    height: 98vh;
+    height: 98%;
     position: absolute;
     text-align: center;
     padding-top: 123px;
@@ -64,7 +64,7 @@ function Header(){
                             <ImageLinkStyled to={"/contact"} className="active-link"><ImageStyled src="src\assets\logo\contact.svg" alt="contact" /></ImageLinkStyled>
                 </PagesStyled>
                 <SocialStyled href="https://www.linkedin.com/in/foko-kenmogne-wilfried-0283a825b" target="_blank" rel="noopener">
-                    <ImageLinkStyled><SocialImageStyled src="src\assets\logo\linkedin.svg" alt="linkedin"  /></ImageLinkStyled>
+                    <SocialImageStyled src="src\assets\logo\linkedin.svg" alt="linkedin"  />
                 </SocialStyled>
             </StyledNav>
     )

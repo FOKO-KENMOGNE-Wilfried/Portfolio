@@ -5,9 +5,14 @@ export const StyledAll = styled.div`
     flex-direction: row;
 `
 
-const colors = {
+export const colors = {
     primary: "#434343",
     secondary: "#149380",
+    third: "white",
+}
+export const font = {
+    primary: "arial",
+    secondary: "calibri",
 }
 
 export default colors

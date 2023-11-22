@@ -2,6 +2,12 @@ import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 import colors from "../../utils/styles/style"
 import "./style.css"
+import home from "../../assets/logo/home.svg";
+import about from "../../assets/logo/about1.svg"
+import skills from "../../assets/logo/skills.svg"
+import portfolio from "../../assets/logo/portfolio1.svg"
+import contact from "../../assets/logo/contact.svg"
+import linkedin from "../../assets/logo/linkedin.svg"
 
 const StyledNav = styled.nav`
     display: flex;
@@ -10,7 +16,7 @@ const StyledNav = styled.nav`
     gap: 200px;
     width: 60px;
     height: 98%;
-    position: absolute;
+    position: fixed;
     text-align: center;
     padding-top: 123px;
     box-sizing: border-box;
@@ -57,14 +63,14 @@ function Header(){
         
             <StyledNav>
                 <PagesStyled>
-                            <ImageLinkStyled to={"/"} className="active-link" ><ImageStyled src="src\assets\logo\home.svg" alt="home" /></ImageLinkStyled>
-                            <ImageLinkStyled to={"/about"} className="active-link"><ImageStyled src="src\assets\logo\about1.svg" alt="about" /></ImageLinkStyled>
-                            <ImageLinkStyled to={"/skills"} className="active-link"><ImageStyled src="src\assets\logo\skills.svg" alt="skills" /></ImageLinkStyled>
-                            <ImageLinkStyled to={"/portfolio"} className="active-link"><ImageStyled src="src\assets\logo\portfolio1.svg" alt="portfolio" /></ImageLinkStyled>
-                            <ImageLinkStyled to={"/contact"} className="active-link"><ImageStyled src="src\assets\logo\contact.svg" alt="contact" /></ImageLinkStyled>
+                            <ImageLinkStyled to={"/"} className="active-link" ><ImageStyled src={home} alt="home" /></ImageLinkStyled>
+                            <ImageLinkStyled to={"/about"} className="active-link"><ImageStyled src={about} alt="about" /></ImageLinkStyled>
+                            <ImageLinkStyled to={"/skills"} className="active-link"><ImageStyled src={skills} alt="skills" /></ImageLinkStyled>
+                            <ImageLinkStyled to={"/portfolio"} className="active-link"><ImageStyled src={portfolio} alt="portfolio" /></ImageLinkStyled>
+                            <ImageLinkStyled to={"/contact"} className="active-link"><ImageStyled src={contact} alt="contact" /></ImageLinkStyled>
                 </PagesStyled>
                 <SocialStyled href="https://www.linkedin.com/in/foko-kenmogne-wilfried-0283a825b" target="_blank" rel="noopener">
-                    <SocialImageStyled src="src\assets\logo\linkedin.svg" alt="linkedin"  />
+                    <SocialImageStyled src={linkedin} alt="linkedin"  />
                 </SocialStyled>
             </StyledNav>
     )

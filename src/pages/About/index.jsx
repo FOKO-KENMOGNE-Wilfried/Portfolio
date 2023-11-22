@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import image from "../../assets/logo/visual3.png";
 
 const DefultText = styled.div`
     color: white;
@@ -6,7 +7,7 @@ const DefultText = styled.div`
     height: 400px;
     margin-left: 250px;
     margin-top: 150px;
-    font-family: cursive;
+    font-family: Arial;
     font-size: 20px;
     
 `
@@ -44,7 +45,7 @@ function About(){
             field.
             </DefultText>
 
-            <StyledImg src="src\assets\logo\visual3.png" alt="visuel" />
+            <StyledImg src={image} alt="visuel" />
         </Box>
     )
 }

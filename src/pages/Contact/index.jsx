@@ -1,5 +1,7 @@
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 import colors from "../../utils/styles/style";
+import mail from "../../assets/logo/mail2.png";
+import phone from "../../assets/logo/phone2.png";
 
 const DefultText = styled.div`
     color: white;
@@ -22,50 +24,28 @@ const Box = styled.div`
     
     margin-top: 150px;
 `
-const InverteRotate = keyframes`
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-  `
 const StyledImage = styled.img`
     width: 50px;
     height: 50px;
     margin-top: 25px;
-    animation: ${InverteRotate} 10s linear infinite;
 `
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-  `
 const StyledImageDiv = styled.div`
     text-align: center;
     border: 5px dashed ${colors.secondary};
     border-radius: 80px;   
     width: 100px;
     height: 100px;
-    animation: ${rotate} 10s linear infinite;
 `
 const StyledMailP = styled.p`
     margin-left: -70px;
     margin-top: 40px;
-    position: absolute;
-    left: 37%;
-    top: 65%;
+    
 `
 const StyledPhoneP = styled.p`
     margin-left: -10px;
     margin-top: 40px;
     width: 130px;
-    position: absolute;
-    left: 56%;
-    top: 65%;
+    
 `
 
 function Contact(){
@@ -74,13 +54,13 @@ function Contact(){
             <TitleStyled>CONTACT ME</TitleStyled>
             <Box>
                 <StyledImageDiv>
-                    <StyledImage src="src\assets\logo\mail2.png" alt="mail" />
+                    <StyledImage src={mail} alt="mail" />
+                    <StyledMailP>fokowilfried7@gmail.com</StyledMailP>
                 </StyledImageDiv>
-                <StyledMailP>fokowilfried7@gmail.com</StyledMailP>
                 <StyledImageDiv>
-                    <StyledImage src="src\assets\logo\phone2.png" alt="phone" />
+                    <StyledImage src={phone} alt="phone" />
+                    <StyledPhoneP>+237 683 41 52 30</StyledPhoneP>
                 </StyledImageDiv>
-                <StyledPhoneP>683 41 52 30</StyledPhoneP>
             </Box>
         </DefultText>
     )

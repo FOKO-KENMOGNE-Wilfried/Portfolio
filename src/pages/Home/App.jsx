@@ -45,8 +45,8 @@ const ButtonStyled = styled(Link)`
     border-radius: 6px;
     text-align: center;
     font-weight: bolder;
-    font-family: ${font.secondary};
-    font-size: 20px;
+    font-family: ${font.primary};
+    font-size: 15px;
     margin-left: 180px;
     transition: 
             background-color 1s,
@@ -99,7 +99,7 @@ const P2 = styled.p`
     opacity: 0;
     transform: translateY(-30px);
     animation: ${TitleEffect} 0.8s 0.4s ease-out forwards;
-    margin-top: -40px;
+    margin-top: -50px;
     @media only screen and (max-width: 1177px){
         font-size: 30px;
         margin-top: -30px;
@@ -168,7 +168,7 @@ const ImageContainer = styled.div`
     opacity: 0;
     transform: translateX(80px);
     animation: ${TitleEffect} 0.8s 1s ease-out forwards;
-    border: 10px solid ${colors.secondary};
+    border: 10px solid black;
     width: 300px;
     height: 300px;
     border-radius: 50%;

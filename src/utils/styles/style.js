@@ -11,7 +11,7 @@ export const colors = {
     third: "white",
 }
 export const font = {
-    primary: "arial",
+    primary: "Roboto",
     secondary: "calibri",
 }
 

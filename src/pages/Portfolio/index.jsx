@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import Card from "./card";
 
-const DefultText = styled.div`
+const DefaultText = styled.div`
     color: white;
     width: 100%;
-    margin-top: 150px;
+    padding-top: 80px;
     font-family: cursive;
     font-size: 20px;
     
@@ -13,13 +14,18 @@ const TitleStyled = styled.h1`
     text-align: center;
     
 `
+const ContainerStyled = styled.div`
+    margin: auto;
+`
 
 function Portfolio(){
     return(
-
-        <DefultText>
-            <TitleStyled>MY PROJECTS</TitleStyled>
-        </DefultText>
+        <ContainerStyled>
+            <DefaultText>
+                <TitleStyled>MY PROJECTS</TitleStyled>
+            </DefaultText>
+            <Card/>
+        </ContainerStyled>
     ) 
 }
 

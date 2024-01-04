@@ -6,8 +6,9 @@ import typescript from "../../assets/logo/typescript.svg";
 import sass from "../../assets/logo/sass1.webp";
 import figma from "../../assets/logo/figma.png";
 import git from "../../assets/logo/git.png";
-import github from "../../assets/logo/github.ico";
+//import github from "../../assets/logo/github.ico";
 import firebase from "../../assets/logo/firebase.png";
+import tailwind from "../../assets/logo/tailwindcss.png";
 
 const TitleEffect = keyframes`
     100%{
@@ -16,7 +17,7 @@ const TitleEffect = keyframes`
     }
 `
 
-const DefultText = styled.div`
+const DefaultText = styled.div`
     color: white;
     width: 100%;
     height: 100%;
@@ -188,7 +189,7 @@ const StyledImageContainer8 = styled.div`
 function Skills(){
 
     return(
-        <DefultText>
+        <DefaultText>
             <TitleStyled>
                 SKILLS
             </TitleStyled>
@@ -211,7 +212,7 @@ function Skills(){
                     </StyledImageContainer4>
 
                     <StyledImageContainer5>
-                        <StyledImage src={figma} alt="figma" />
+                        <StyledImage src={tailwind} alt="tailwindcss" />
                     </StyledImageContainer5>
 
                     <StyledImageContainer6>
@@ -219,7 +220,7 @@ function Skills(){
                     </StyledImageContainer6>
 
                     <StyledImageContainer7>
-                        <StyledImage src={github} alt="github" />
+                        <StyledImage src={figma} alt="figma" />
                     </StyledImageContainer7>
 
                     <StyledImageContainer8>
@@ -227,7 +228,7 @@ function Skills(){
                     </StyledImageContainer8>
                 </Box>
             </BoxContainer>
-        </DefultText>
+        </DefaultText>
     )
 }
 

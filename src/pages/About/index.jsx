@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { font } from "../../utils/styles/style";
 import TypeIt from "typeit-react";
 
-const DefultText = styled.div`
+const DefaultText = styled.div`
     color: white;
     width: 700px;
     height: 400px;
     margin-left: 400px;
-    margin-top: 150px;
+    padding-top: 80px;
     font-family: ${font.primary};
     font-size: 25px;
     
@@ -27,20 +27,20 @@ const Box = styled.div`
 function About(){
     return(
         <Box>
-            <DefultText>
+            <DefaultText>
                 <TitleStyled>ABOUT ME</TitleStyled>
                 <TypeIt options={{
                     speed: 20,
                 }}>
                     I'm FOKO Wilfried a young Camerounian, 
-                    web developer and 
+                    front-end  developer and 
                     computer engeneering student.
                     I'm passionate about IT in general but 
                     in particular about development, my goal 
                     is to become great in the field and a source 
                     of inspiration for others.
                 </TypeIt>
-            </DefultText>
+            </DefaultText>
 
             {/* <StyledImg  alt="visuel" /> */}
         </Box>
